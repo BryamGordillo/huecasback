@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css';
+import HuecasPage from './Huecas/HuecasPage';
+import HuecaCreate from './Huecas/HuecaCreate';
+import HuecaUpdate from './Huecas/HuecaUpdate';
+import Navbar from "./components/Navbar";
 
-function App() {
+function App () {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      
+    <BrowserRouter>
+    <Navbar />
+      <Routes>
+        <Route path="/huecas" element={<HuecasPage />} />            
+        <Route path="/createhueca" element={ <HuecaCreate />   }/>   
+        <Route path="/updatehueca/:huecaId" element={ <HuecaUpdate />   }/>   
+        
+      </Routes>
+
+    </BrowserRouter>   
   );
 }
 
