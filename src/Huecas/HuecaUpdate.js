@@ -13,7 +13,7 @@ function HuecasPage() {
     updateHueca(hueca);
   }
   const onChange = (event) =>{
-    if(event.target.name==='idhuecas')
+    if(event.target.name==='id')
       setHueca({...hueca,idhuecas:event.target.value})
     if(event.target.name==='Nombre')
       setHueca({...hueca,Nombre:event.target.value})    
@@ -39,8 +39,8 @@ function HuecasPage() {
 
           <input 
           className="formUpdateInput"
-            name="idhuecas"
-            placeholder="idhuecas" 
+            name="id"
+            placeholder="id" 
             value={hueca.idhuecas}
             onChange={onChange}
    

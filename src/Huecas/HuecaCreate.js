@@ -45,7 +45,7 @@ function HuecaCreate() {
       <h2>Crear Huecas</h2>
       <form onSubmit={onSubmit}>
         <label>
-          idhuecas
+          Id
           <input 
             name="idhuecas"
             value={idhuecas}
