@@ -8,7 +8,11 @@ export default function Navbar() {
                 <NavLink to={"/huecas"} className="navlink">
                     HUECAS
                 </NavLink>
-
+            </li>
+            <li>
+                <NavLink to={"/usuarios"} className="navlink">
+                    USUARIOS
+                </NavLink>
             </li>
         </ul>
 

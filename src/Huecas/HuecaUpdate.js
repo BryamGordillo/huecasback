@@ -39,7 +39,7 @@ function HuecasPage() {
 
           <input 
           className="formUpdateInput"
-            name="id"
+            name="idhuecas"
             placeholder="id" 
             value={hueca.idhuecas}
             onChange={onChange}
